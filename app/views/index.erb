@@ -1,0 +1,12 @@
+<h1>All Da Recipes</h1>
+
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li>
+      <a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a>
+    </li>
+  <% end %>
+</ul>
+
+<hr />
+<a href="recipes/new">Create a new recipe</a>
